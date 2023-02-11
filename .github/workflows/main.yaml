@@ -1,0 +1,11 @@
+on:
+  push:
+    paths:
+      - .github/workflows/main.yaml
+
+jobs:
+  jobs1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ls -Ahlt .git
